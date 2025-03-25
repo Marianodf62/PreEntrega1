@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles.css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <title>Mi Sitio</title>
+</head>
+
+<body>
+  <header>
+    <div class="logo-header">
+      <img src="../img/logo-lambo.png " alt="">
+    </div>
+    <h1>AUTOMATIC</h1>
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="./quienesSomos.html">Quienes somos</a></li>
+        <li><a href="#">Comprar</a></li>
+        <li><a href="./autos.html">Autos</a></li>
+        <li><a href="./contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="compras">
+      <h2>COMPRAS</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h3>Buscar vehículos</h3>
+            <form>
+              <div class="form-group">
+                <label for="marca">Marca:</label>
+                <select id="marca" name="marca">
+                  <option value="">Seleccione una marca</option>
+                  <option value="Toyota">Toyota</option>
+                  <option value="Honda">Honda</option>
+                  <option value="Ford">Ford</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="modelo">Modelo:</label>
+                <select id="modelo" name="modelo">
+                  <option value="">Seleccione un modelo</option>
+                  <option value="Corolla">Corolla</option>
+                  <option value="Civic">Civic</option>
+                  <option value="F-150">F-150</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="precio">Precio:</label>
+                <input type="number" id="precio" name="precio" placeholder="Ingrese un precio">
+              </div>
+              <button type="submit">Buscar</button>
+            </form>
+          </div>
+          <div class="col-md-6">
+            <h3>Resultados de búsqueda</h3>
+            <div class="vehiculos">
+              <div class="vehiculo">
+                <h4>Toyota Corolla 2015</h4>
+                <p>Precio: $15,000</p>
+                <p>Kilometraje: 50,000 km</p>
+                <img src="../img/images.jpg" alt="Toyota Corolla 2015">
+                <button>Ver detalles</button>
+              </div>
+              <div class="vehiculo">
+                <h4>Honda Civic 2018</h4>
+                <p>Precio: $20,000</p>
+                <p>Kilometraje: 20,000 km</p>
+                <img src="../img/honda.jpg" alt="Honda Civic 2018">
+                <button>Ver detalles</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <section id="contacto">
+    <h2>Contáctanos</h2>
+    <p>Teléfono: 3811234567 <br>
+      Correo electrónico: automatic@gmail.com <br>
+      Dirección: San miguel de Tucuman</p>
+    <section class="redes">
+      <img src="../img/face.png" alt="">
+      <img src="../img/insta.png" alt="">
+      <img src="../img/wp.png" alt="">
+    </section>
+
+  </section>
+
+  <footer>
+    <p>AUTOMATIC VENTA DE VEHICULOS</p>
+  </footer>
+
+</body>
+
+</html>

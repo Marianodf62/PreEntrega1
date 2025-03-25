@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Mi Sitio</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo-header">
+            <img src="../img/logo-lambo.png" alt="">
+        </div>
+        <h1>AUTOMATIC</h1>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./quienesSomos.html">Quienes somos</a></li>
+                <li><a href="./comprar.html">Comprar</a></li>
+                <li><a href="./autos.html">Autos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contacto">
+        <h2>Contactanos</h2>
+        <div class="container">
+            <div class="info-contacto">
+                <div class="col-md-6">
+                    <h3>Informacion de Contacto:</h3>
+                    <p>Telefono: 3811234567</p>
+                    <p>Email: <a class="correo" href="./submit">automatic@gmail.com</a> </p>
+                    <p>Direccion: San Miguel de Tucuman</p>
+                </div>
+            </div>
+            <div class="container-form">
+                <form action="/submit" method="post">
+                    <div class="formulario">
+                        <label for="Nombre">Nombre:</label>
+                        <input type="text" name="Nombre" id="Nombre" required>
+
+                        <label for="Email">Email:</label>
+                        <input type="email" name="Email" id="Email">
+
+                        <label for="Mensaje">Mensaje:</label>
+                        <textarea name="Mensaje" id="Mensaje" required></textarea>
+                        <button class="enviar" type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </section>
+    <div class="mapa">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113927.15975796667!2d-65.3049951248154!3d-26.83283503327894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94223792d6c56903%3A0xf88d5b92b5c56527!2sSan%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses-419!2sar!4v1739645831667!5m2!1ses-419!2sar"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <section id="contacto">
+        <h2>Contáctanos</h2>
+        <p>Teléfono: 3811234567 <br>
+            Correo electrónico: automatic@gmail.com <br>
+            Dirección: San miguel de Tucuman</p>
+        <section class="redes">
+            <img src="../img/face.png" alt="">
+            <img src="../img/insta.png" alt="">
+            <img src="../img/wp.png" alt="">
+        </section>
+
+    </section>
+
+    <footer>
+        <p>AUTOMATIC VENTA DE VEHICULOS</p>
+    </footer>
+
+
+</body>
+
+</html>

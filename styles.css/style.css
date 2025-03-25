@@ -1,0 +1,555 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*Estilo para el body*/
+
+body {
+  background-color: rgb(54, 49, 49);
+  font-family: Atkinson Hyperlegible Mono;
+}
+
+
+/*Estilo para sacar los puntos de los links de navegacion*/
+
+a {
+  text-decoration: none;
+}
+
+
+/*Estilo para el titulo de la pagina*/
+
+h1 {
+  text-align: center;
+  color: #fff;
+}
+
+
+/*Estilo para el header*/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  background-color: rgb(78, 75, 75);
+  align-items: center;
+  padding: 1rem 2rem;
+  font-family: Atkinson Hyperlegible Mono;
+  position: static;
+}
+
+/* Media query para dispositivos móviles */
+
+@media only screen and (max-width: 768px) {
+  header {
+    padding: 10px;
+  }
+  header .logo {
+    font-size: 18px;
+  }
+  header .navegacion {
+    flex-direction: column;
+  }
+  header .navegacion ul {
+    flex-direction: column;
+  }
+  header .navegacion li {
+    margin-bottom: 10px;
+  }
+}
+
+/* Media query para dispositivos tablet */
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .header {
+    padding: 15px;
+  }
+  .header .logo-header {
+    font-size: 20px;
+  }
+  .header .nav-menu {
+    flex-direction: row;
+  }
+  .header .navegacion ul {
+    flex-direction: row;
+  }
+  .header .navegacion li {
+    margin-right: 15px;
+  }
+}
+
+
+/*Estilo para el logo*/
+
+.logo-header {
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+
+/*Estilo para el menu de navegacion*/
+
+.nav-menu ul {
+  display: flex;
+  justify-content: center;
+
+}
+
+.nav-menu li {
+  margin-right: 1.5rem;
+  text-decoration: none;
+  list-style: none;
+}
+
+.nav-menu li,
+a {
+  color: #fff;
+}
+
+.nav-menu a:hover {
+  color: #4ad295;
+}
+
+.nav-menu li:last-child {
+  background-color: #4ad295;
+  border: 2px solid #4ad295;
+  border-radius: 5px;
+}
+
+.nav-menu li:last-child:hover {
+  background: transparent;
+  border: 2px solid #4ad295;
+}
+
+/* Estilos para la sección de inicio */
+
+
+main {
+  background-color: #e4efea;
+}
+
+#inicio {
+  padding: 40px;
+  text-align: center;
+  color: #cd0d0d;
+}
+
+/* Estilos para la sección de vehículos */
+
+.vehiculos {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.grid-vehiculos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.card-vehiculo {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-vehiculo img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-vehiculo h3 {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.card-vehiculo p {
+  margin-bottom: 10px;
+}
+
+.card-vehiculo button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card-vehiculo button:hover {
+  background-color: #3e8e41;
+}
+
+/* Responsive design */
+
+@media (max-width: 768px) {
+  .grid-vehiculos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-vehiculos {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Estilos para la sección de contacto */
+
+#contacto {
+  padding: 40px;
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Estilos para el footer */
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+
+
+/*Estilos para la section Quienes Somos*/
+
+#quienes-somos {
+  padding: 40px;
+  background-color: #e4efea;
+}
+
+#quienes-somos h2 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+#quienes-somos img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#quienes-somos p {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #666;
+}
+
+.mision-vision {
+  margin-top: 40px;
+}
+
+.mision-vision h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.mision-vision p {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  #quienes-somos img {
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  #quienes-somos img {
+    height: 150px;
+  }
+}
+
+
+/*Estilos para la section compras*/
+
+#compras {
+  padding: 40px;
+}
+
+#compras h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+#compras form {
+  margin-bottom: 20px;
+}
+
+#compras label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#compras select,
+#compras input[type="number"] {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+
+#compras button[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+#compras button[type="submit"]:hover {
+  background-color: #555;
+}
+
+.vehiculos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.vehiculo {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px;
+  width: calc(33.33% - 20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.vehiculo p {
+  margin-top: 10px;
+}
+
+.vehiculo img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.vehiculo button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.vehiculo button:hover {
+  background-color: #555;
+}
+
+@media (max-width: 768px) {
+  .vehiculo {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .vehiculo {
+    width: 100%;
+  }
+}
+
+
+/*Estilos seccion compras*/
+
+#ventas {
+  padding: 40px;
+}
+
+#ventas h2 {
+  margin-top: 5px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+#ventas .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#ventas .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#ventas .col-md-3 {
+  width: 29%;
+  margin: 20px;
+}
+
+#ventas h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+#ventas .vehiculos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#ventas .vehiculo {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#ventas .vehiculo h4 {
+  margin-top: 0;
+}
+
+#ventas .vehiculo p {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #666;
+}
+
+#ventas .vehiculo img {
+  width: 100%;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+#ventas .vehiculo button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+#ventas .vehiculo button:hover {
+  background-color: #555;
+}
+
+@media (max-width: 768px) {
+  #ventas .col-md-3 {
+    width: 50%;
+    margin: 20px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  #ventas .col-md-3 {
+    width: 100%;
+    margin: 20px 0;
+  }
+  #ventas .vehiculo {
+    margin: 20px 0;
+  }
+}
+
+
+
+/* estilos seccion contacto*/
+
+
+.contacto h2 {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  color: gray;
+  text-decoration: underline;
+}
+
+.info-contacto {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  margin-top: 30px;
+}
+
+.formulario {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+  margin-right: 1rem;
+  color: gray;
+}
+
+.mapa {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.enviar {
+  padding: .80rem;
+  color: white;
+  background-color: #4ad295;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.col-md-6 a.correo {
+  background-color: #4ad295;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  #contacto .col-md-6 {
+    width: 100%;
+    margin: 20px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  #contacto h2 {
+    font-size: 24px;
+  }
+  #contacto h3 {
+    font-size: 18px;
+  }
+  #contacto p {
+    font-size: 16px;
+  }
+}
+
+/* Media query para dispositivos móviles */
+
+@media only screen and (max-width: 768px) {
+  .footer .row {
+    flex-direction: column;
+  }
+  .footer .col {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Media query para dispositivos tablet */
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .footer .row {
+    flex-direction: row;
+  }
+  .footer .col {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+  }
+}
