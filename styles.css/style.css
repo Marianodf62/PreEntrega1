@@ -45,16 +45,20 @@ header {
   header {
     padding: 10px;
   }
+
   header .logo {
     font-size: 18px;
   }
-  header .navegacion {
+
+  header .nav-menu {
     flex-direction: column;
   }
-  header .navegacion ul {
+
+  header .nav-menu ul {
     flex-direction: column;
   }
-  header .navegacion li {
+
+  header .nav-menu li {
     margin-bottom: 10px;
   }
 }
@@ -62,19 +66,23 @@ header {
 /* Media query para dispositivos tablet */
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-  .header {
+  header {
     padding: 15px;
   }
-  .header .logo-header {
+
+  header .logo-header {
     font-size: 20px;
   }
-  .header .nav-menu {
+
+  header .nav-menu {
     flex-direction: row;
   }
-  .header .navegacion ul {
+
+  header .nav-menu ul {
     flex-direction: row;
   }
-  .header .navegacion li {
+
+  header .nav-menu li {
     margin-right: 15px;
   }
 }
@@ -211,6 +219,14 @@ main {
   justify-content: space-between;
 }
 
+/*Media query para seccion de contacto del footer*/
+@media (max-width:768px) {
+  #contacto{
+    flex-direction: column;
+  }
+}
+
+
 /* Estilos para el footer */
 
 footer {
@@ -219,6 +235,8 @@ footer {
   padding: 10px;
   text-align: center;
 }
+
+
 
 
 
@@ -458,6 +476,7 @@ footer {
     width: 100%;
     margin: 20px 0;
   }
+
   #ventas .vehiculo {
     margin: 20px 0;
   }
@@ -491,6 +510,12 @@ footer {
   color: gray;
 }
 
+@media (max-width: 768px) {
+  .formulario{
+    flex-direction: column;
+  }
+}
+
 .mapa {
   display: flex;
   justify-content: center;
@@ -522,9 +547,11 @@ footer {
   #contacto h2 {
     font-size: 24px;
   }
+
   #contacto h3 {
     font-size: 18px;
   }
+
   #contacto p {
     font-size: 16px;
   }
@@ -536,6 +563,7 @@ footer {
   .footer .row {
     flex-direction: column;
   }
+
   .footer .col {
     flex-basis: 100%;
     margin-bottom: 20px;
@@ -548,6 +576,7 @@ footer {
   .footer .row {
     flex-direction: row;
   }
+
   .footer .col {
     flex-basis: 50%;
     margin-bottom: 20px;
