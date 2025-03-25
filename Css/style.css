@@ -389,6 +389,16 @@ footer {
 
 /*Estilos seccion compras*/
 
+.carousel { 
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.carousel-inner {
+  max-width: 500px;
+}
+
 #ventas {
   padding: 40px;
 }
